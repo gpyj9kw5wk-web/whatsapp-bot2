@@ -97,7 +97,7 @@ async (msg, match) => {
   const number =
     match[1].replace(/[^0-9]/g, "");
 
-  if (!sock.authState.creds.registered) {
+  if (true) {
 
     pairCode =
       await sock.requestPairingCode(number);
